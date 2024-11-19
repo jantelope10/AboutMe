@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metatags containing charset, viewport, webpage description, keywords, and author along with the webpage title.-->
+    <!--Includes imports of the mainelements CSS page and the functions JavaScript page.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All About Jacob Sanchez">
+    <meta name="keywords" content="Christian Worldview">
+    <meta name="author" content="Jacob Sanchez">
+    <meta name="revised" content="9/24/2024">
+    <meta name="position" content="1">
+    <title>Christian Worldview</title>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/mainelements.css">
+  <script src="/functions.js"></script>
+  </head>
+
+  <style>
+    img#a {
+        width:300px;
+        height:250px;
+        transition:0.3s;
+    }
+
+    img#a:hover {
+        transform:scale(1.03);
+    }
+    
+    img#b {
+        width:300px;
+        height:500px;
+        border: 4px solid orangered;
+        transition:0.3s;
+    }
+
+    img#b:hover {
+        transform:scale(1.03);
+    }
+
+    img#c {
+        width:200px;
+        height:350px;
+        border:4px solid orangered;
+    }
+
+    img#c:hover {
+        transition:0.3s;
+        transform:scale(1.03);
+    }
+
+    img#d {
+        width:200px;
+        height:350px;
+        border:4px solid orangered;
+    }
+
+    img#d:hover {
+        transition:0.3s;
+        transform:scale(1.03);
+    }
+    p {
+        color:black;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: black;
+    }
+
+    .nav-pills li {
+        margin-bottom:5px;
+    }
+    .nav-pills .nav-link.active:hover {
+        transition:0.3s;
+        transform:scale(1.03);
+    }
+
+    a {
+        color:orangered;
+    }
+
+    a:hover {
+        color:orangered;
+    }
+
+    button {
+        border: 4px solid black;
+    }
+  </style>
+<body style="background-color:white">
+    <!--Nav tag links that bring user to the link's corresponding page (defined in external CSS).-->
+    <nav style="color:orangered">
+        <a href="/index/index.html">HOME</a>
+        |
+        <a href="/hobbies/hobbies.html">HOBBIES</a>
+        |
+        <a href="/events/events.html">EVENTS/HISTORY</a>
+        |
+        <a href="/photos/photos.html">PHOTOS AND VIDEOS</a>
+        |
+        <a href="/places/places.html">PLACES I'VE TRAVELED</a>
+        |
+        <a href="/christian/christian.html">CHRISTIAN WORLDVIEW</a>
+        |
+        <a href="/contact/contact.html">CONTACT INFO</a>
+    </nav>
+    <!--Title of the website, emojis, and title images that are each defined in the external CSS file.-->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>&#128217 My Christian Worldview &#10013</h1>
+    </div>
+
+    <div class="container" style="margin-top:30px;">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>About My Worldview:</h2>
+                <img id="a" src="biblewithacross.png" alt="Bible with a cross">
+                <p>I believe in Christianity. I believe that Jesus Christ came and died for our sins to ultimately
+                    save us from sin, death, and the devil. I am firm in my beliefs, as they are the core to how
+                    I live about each day.                    
+                </p>
+                <h2>Links to resources:</h2>
+                <ul class="nav nav-pills black flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="https://www.biblegateway.com/">Bible Gateway (Holy Bible)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.ccanaheim.com/">My Home Church (Cornerstone Church Anaheim)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.biblica.com/resources/reading-plans/">My Bible Reading Plan</a>
+                    </li>
+                </ul>
+            </div>
+            <img id="b" style="margin-top:200px;" src="bible.jpg" class="rounded mx-auto d-block" alt="Bible">
+            <div class="col-md-3 offset-1">
+                <h2>More Christian Worldview Pictures:</h2>
+                <img id="c" style="margin-bottom:30px;" src="cross.jpg" alt="Cross">
+                <img id="d" src="worship.jpg" alt="Worship">
+                  
+            </div>
+        </div>
+    </div>
+    <!--Includes a button that navigates the user back to the home page, uses an external JavaScript function.-->
+    <div align="center">
+        <button onclick="buttons()" style="font-size: 30px; width: 350px; height: 100px;">Go Back Home</button>
+    </div>
+</body>
+</html>

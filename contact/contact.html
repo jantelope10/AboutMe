@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metatags containing charset, viewport, webpage description, keywords, and author along with the webpage title.-->
+    <!--Includes imports of the mainelements CSS page and the functions JavaScript page.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All About Jacob Sanchez">
+    <meta name="keywords" content="Contact Info">
+    <meta name="author" content="Jacob Sanchez">
+    <meta name="revised" content="9/24/2024">
+    <meta name="position" content="1">
+    <title>Contact Info</title>
+    <link rel="stylesheet" type="text/css" href="/mainelements.css">
+    <script src="/functions.js"></script>
+    <style>
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .tag {
+            background-color:rgb(200, 200, 200);
+            width:700px;
+            height:500px;
+            border-radius:25%;
+            border:4px solid rgb(231, 231, 231);
+            margin:auto;
+            display:flex;
+            align-items:center;
+            flex-wrap:wrap;
+            justify-content:center;
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .tag img {
+            width:50px;
+            height:50px;
+        }
+
+        .tag a {
+            font-family:Courier;
+            font-style:italic;
+            font-size:30px;
+            color:orangered;
+        }
+
+        .break {
+            flex-basis:100%;
+            height:0;
+        }
+
+        .font {
+            font-family:Courier;
+            font-weight:normal;
+            font-style:italic;
+            font-size:30px;
+            color:orangered;
+        }
+    </style>
+</head>
+<body>
+    <!--Nav tag links that bring user to the link's corresponding page (defined in external CSS).-->
+    <nav>
+        <a href="/index/index.html">HOME</a>
+        |
+        <a href="/hobbies/hobbies.html">HOBBIES</a>
+        |
+        <a href="/events/events.html">EVENTS/HISTORY</a>
+        |
+        <a href="/photos/photos.html">PHOTOS AND VIDEOS</a>
+        |
+        <a href="/places/places.html">PLACES I'VE TRAVELED</a>
+        |
+        <a href="/christian/christian.html">CHRISTIAN WORLDVIEW</a>
+        |
+        <a href="/contact/contact.html">CONTACT INFO</a>
+    </nav>
+    <!--Title of the website, emojis, and title images that are each defined in the external CSS file.-->
+    <h1>&#128195 My Contact Info &#128241</h1>
+
+    <div class="tag">
+        <img src="linkedin.png">&ensp;<a href="https://www.linkedin.com/in/jacob-sanchez-b823b432a/">LinkedIn</a>
+        <div class="break"></div>
+        <img src="github.png">&ensp;<a href="https://github.com/jantelope10">GitHub</a>
+        <div class="break"></div>
+        <img src="gmail.jpg">&ensp;<h5 class="font">developed.by.jacob@gmail.com</h5>
+    </div>
+
+    <br><br><br>
+    <!--Includes a button that navigates the user back to the home page, uses an external JavaScript function.-->
+    <div align="center">
+        <button onclick="buttons()" style="font-size: 30px; width: 350px; height: 100px;">Go Back Home</button>
+    </div>
+</body>
+</html>
