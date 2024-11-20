@@ -3,19 +3,19 @@
 function buttons(index) {
     let pageNum = index;
     if(pageNum == 2)
-        window.location.href = "/hobbies.html";
+        window.location.href = "hobbies.html";
     else if(pageNum == 3)
-        window.location.href = "/events.html";
+        window.location.href = "events.html";
     else if(pageNum == 4)
-        window.location.href = "/photos.html";
+        window.location.href = "photos.html";
     else if(pageNum == 5)
-        window.location.href = "/places.html";
+        window.location.href = "places.html";
     else if(pageNum == 6)
-        window.location.href = "/christian.html";
+        window.location.href = "christian.html";
     else if(pageNum == 7)
-        window.location.href = "/contact.html";
+        window.location.href = "contact.html";
     else
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
 }
 // Function that makes the info boxes appear and changes text boxes in the pages.html web page.
 // Program automatically determines what the index number is based on which hover element is hovered over.
